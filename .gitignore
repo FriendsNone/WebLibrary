@@ -1,3 +1,6 @@
-# Junk folder which contains files
-# that's not required by anything
+# Garbage collecting folders that I use for developement
 junk/
+not_yet/
+
+# Copies of files that I make whenever I rewrite something
+*.bak.*
