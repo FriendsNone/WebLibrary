@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vinorodrigues/bootstrap-dark@0.0/dist/bootstrap-dark.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <!-- Book title -->
     <title>Lorem ipsum - WebLibrary</title>
   </head>
@@ -60,9 +60,8 @@
                 <h5 class="card-title">This book is currently unavailable</h5>
                 <!-- No. of Copies and Patrons on hold -->
                 <p class="card-text">There is 0 copy available and 5 patrons on the waiting list.</p>
-                <a href="14-missing.html" class="btn btn-warning btn-sm">Place hold</a>
-
-                <!-- <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#itemPlaceHold">
+                
+                <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#itemPlaceHold">
                   Place hold
                 </button>
 
@@ -84,7 +83,14 @@
                                 Short-term (1 week max)
                               </label>
                             </div>
+                            <div class="input-group input-group-sm mt-2">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text">Pickup date</span>
+                              </div>
+                              <input type="date" value="2021-12-04">
+                            </div>
                           </div>
+
                           <div class="form-group">
                             <div class="form-check mb-2">
                               <input type="radio" name="itemPlaceHoldType" id="itemPlaceHoldType2" class="form-check-input">
@@ -92,21 +98,30 @@
                                 Long-term (1 month max)
                               </label>
                             </div>
-                            <label for="itemPlaceHoldStartDate" class="form-check-label">From: </label>
-                            <input type="date" name="itemPlaceHoldStartDate" id="itemPlaceHoldStartDate">
-                            <br>
-                            <label for="itemPlaceHoldEndDate" class="form-check-label">To: </label>
-                            <input type="date" name="itemPlaceHoldEndDate" id="itemPlaceHoldEndDate">
+                            <div class="input-group input-group-sm mt-2">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text">Borrow date</span>
+                              </div>
+                              <input type="date" value="2021-12-04">
+                            </div>
+                            <div class="input-group input-group-sm mt-2">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text">Return date</span>
+                              </div>
+                              <input type="date" value="2022-01-03">
+                            </div>
                           </div>
                         </form>
                       </div>
                       <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <button class="btn btn-primary" type="button">Place hold</button>
+                        <!-- <button class="btn btn-primary" type="button">Place hold</button> -->
+                        <a href="14-missing.html" class="btn btn-primary">Place hold</a>
                       </div>
                     </div>
                   </div>
-                </div> -->
+                </div>
+                
               </div>
             </div>
           </div>
